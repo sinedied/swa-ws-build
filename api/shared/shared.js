@@ -2,7 +2,7 @@ const mongoClient = require("mongodb").MongoClient;
 
 
 const connectDb = async () => {
-    const client = await mongoClient.connect("YOUR-CONNECTION-STRING");
+    const client = await mongoClient.connect("COSMOSDB_CONNECTION_STRING");
   
     return client.db("swaworkshop");
 };
